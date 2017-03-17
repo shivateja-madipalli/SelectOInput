@@ -122,7 +122,7 @@ app.controller('DialogController', function($scope, $mdDialog, wholeData) {
   };
 
   var processTeamMembers = function(selectedData) {
-    if(typeof selectedData != undefined && selectedData != null) {
+    if(typeof selectedData != 'undefined' && selectedData != null) {
       $scope.selectedTeamData = selectedData;
       setTeamName();
       populateTeamMembers();
@@ -173,7 +173,7 @@ app.controller('DialogController', function($scope, $mdDialog, wholeData) {
   };
 
   var processTeamMemberName = function(teamMember) {
-    if(typeof teamMember != undefined && teamMember != null) {
+    if(typeof teamMember != 'undefined' && teamMember != null) {
       $scope.selectedTeamMemberData = teamMember;
       setTeamMemberName();
     }
