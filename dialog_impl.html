@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-resource.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.3/angular-material.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-aria.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-messages.js"></script>
+  <script src="http://ngmaterial.assets.s3.amazonaws.com/svg-assets-cache.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.3/angular-material.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+  <script src="./dialog_impl.js"></script>
+  <link href="./dialog_impl.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div ng-controller="AppCtrl" class="md-padding dialogClass" id="popupContainer" ng-app="MyApp">
+  <h1 layout="row" layout-align="center">
+    Team - Team Member Selection
+  </h1>
+
+  <div layout="row" layout-align="center">
+
+    <md-button class="md-primary md-raised" ng-click="openModal($event)">
+      Click Me! Don't :D
+    </md-button>
+  </div>
+  <p class="footer" ng-if="teamDetails.teamName != ''"> You have selected Team: <span class="teamAndTeamMemberName">{{teamDetails.teamName}}</span> and Team Member: <span class="teamAndTeamMemberName">{{teamDetails.teamMemberName}}</span> </p>
+
+  <div ng-if="status" id="status">
+    <b layout="row" layout-align="center center" class="md-padding">
+      {{status}}
+    </b>
+  </div>
+
+  <script type="text/ng-template" id="dialog.tmpl.html">
+    <md-dialog aria-label="Team-Team Member Selection" class="borderRadius">
+      <form>
+        <md-toolbar>
+          <div class="md-toolbar-tools md-toolbar shrinkToolBar">
+            <h2>Select a Teammate</h2>
+            <span flex></span>
+            <md-button class="md-icon-button" class="shrinkToolBar" ng-click="cancel()">
+              <md-icon id="closeIcon" md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+            </md-button>
+          </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+          <div class="md-dialog-content">
+
+            <span class="makeitBold"> Team </span>
+            <div class="customDiv">
+              <select class="customSelect"  ng-model="selectedTeamId" ng-change="teamSelected()">
+                <option ng-repeat = "t in teams" value={{t.id}}>{{t.team}}</option>
+              </select>
+              <input class="customInput" name="displayValue" placeholder="Type or select a Team" id="displayValue" onfocus="this.select()" ng-keyup="$event.keyCode == 13 ? teamNameInput() : null" ng-model="teamNameText" type="text">
+            </div>
+
+            <span class="makeitBold"> Team Member </span>
+            <div class="customDiv">
+              <select class="customSelect" ng-model="selectedTeamMemberId" ng-change="teamMemberSelected()" ng-disabled="!teamNameText">
+                <option ng-repeat = "tm in teamMembers" data-ng-show="teamMembers.length" value={{tm.id}} >{{tm.name}}</option>
+              </select>
+              <input name="displayValue" placeholder="Type or select a Team Member" id="displayValue" class="customInput" ng-disabled="!teamNameText" onfocus="this.select()" type="text" ng-keyup="$event.keyCode == 13 ? teamMemberNameInput() : null" ng-model="teamMemberName" data-ng-show="teamMembers.length">
+              <input name="idValue" id="idValue" type="hidden">
+            </div>
+          </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+          <span flex></span>
+
+          <md-button id="okButton" ng-click="clickOk()">
+            Ok
+          </md-button>
+        </md-dialog-actions>
+      </form>
+    </md-dialog>
+  </script>
+
+</div>
+</html>

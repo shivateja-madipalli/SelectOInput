@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "team": "Engineering",
+    "members": [
+      {
+        "id": 1,
+        "name": "Adam Bradley"
+      },
+      {
+        "id": 2,
+        "name": "Brad Collins"
+      },
+      {
+        "id": 3,
+        "name": "Douglas Bradford"
+      },
+      {
+        "id": 4,
+        "name": "Emily Franklin"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "team": "Human Resources",
+    "members": [
+      {
+        "id": 1,
+        "name": "George Martinez"
+      },
+      {
+        "id": 2,
+        "name": "Holly Guo"
+      },
+      {
+        "id": 3,
+        "name": "Ingrid Menkelson"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "team": "IT",
+    "members": [
+      {
+        "id": 1,
+        "name": "WU"
+      },
+      {
+        "id": 2,
+        "name": "KI"
+      },
+      {
+        "id": 3,
+        "name": "Laura Johnson"
+      },
+      {
+        "id": 4,
+        "name": "Michel Tobrovsky"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "team": "QA",
+    "members": [
+      {
+        "id": 1,
+        "name": "Nora Robertson"
+      },
+      {
+        "id": 2,
+        "name": "Ollie Peterson"
+      },
+      {
+        "id": 3,
+        "name": "Ping Li"
+      },
+      {
+        "id": 4,
+        "name": "Robert Wells"
+      },
+      {
+        "id": 5,
+        "name": "Sandip Karanam"
+      }
+    ]
+  }
+]

@@ -1,0 +1,134 @@
+.dialogClass #popupContainer {
+  position: relative; }
+
+  .dialogClass .footer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .dialogClass .footer, .dialogClass .footer > code {
+    font-size: 0.8em;
+    margin-top: 50px;
+  }
+
+  .dialogClass button {
+    width: 200px;
+  }
+
+  .dialogClass div#status {
+    color: #8BC34A;
+  }
+
+  .customDiv {
+    position:relative;
+    min-width:400px;
+    min-height:30px;
+    margin:0;
+    padding: 10px;
+  }
+
+  .makeitBold {
+    color: #757575 !important;
+    font-weight: 500;
+  }
+
+  .customSelect {
+    border:0;
+    background-color: white;
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:300px;
+    height:28px;
+    line-height:25px;
+    margin:0;
+    padding:0;
+  }
+  .customSelect:focus {
+    outline: none;
+  }
+
+  .customInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width:280px;
+    height:28px;
+    line-height:25px;
+    border: 0px;
+    padding: 0px;
+    background-color: white;
+  }
+
+  .customInput:focus {
+    outline: none;
+  }
+
+
+  md-toolbar {
+    min-height: 20px !important;
+    background-color: #8ABCFF !important;
+    color: #203E96 !important;
+  }
+
+  .md-toolbar-tools h2 {
+    font-weight: 500;
+  }
+  /*md-toolbar md-toolbar-row {
+  height: 20px !important;
+  background-color: lightsteelblue;
+  }*/
+
+  .shrinkToolBar {
+    height:inherit;
+  }
+
+  .borderRadius {
+    border-radius: 15px;
+  }
+
+  #okButton {
+    background-color: #8ABCFF;
+    border-radius: 10px;
+    color: #203E96 !important;
+  }
+
+  md-icon {
+    fill: #203E96 !important;
+  }
+
+  form {
+    background-color: #E0E0E0;
+  }
+
+  body {
+    background: #f2f2f2;
+  }
+
+  .selectdiv {
+    position: relative;
+    float: left;
+    min-width: 200px;
+    margin: 50px 33%;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+
+  .teamAndTeamMemberName {
+    color: #203E96;
+    font-style: italic;
+    font-weight: 900;
+  }
+
+  .customSelect:after {
+    /*content: '▼';*/
+    color: #203E96;
+    pointer-events: none;
+  }
+
+  .customSelect {
+    display: block;
+    color: #203E96;
+  }
