@@ -6,7 +6,7 @@
 ## How to run?
 * A valid internet connection is required (as angular is fetched from a CDN).
 * Clone the repo.
-* `run bower install angular-animate --save` to have angular-animatation.
+* run `bower install angular-animate --save` to have angular-animatation.
 * run `python -m SimpleHTTPServer` run run a python server as Chrome throws CORS Error. 
 
 ###### The implementation is done  on top of`List<Team - > List < Team Members>>` data
