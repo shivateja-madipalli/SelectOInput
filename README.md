@@ -8,7 +8,7 @@
 * Clone the repo.
 * run `bower install angular-animate --save` in CommandPrompt where the folder is located to install angular-animatation.
 * run `python -m SimpleHTTPServer` in CommandPrompt where the folder is located to run python server as Chrome throws CORS Error for accessing the the files located in local directory, with this we are accessing the file from a local web server.
-* open ``http://127.0.0.1:8000/dialog_impl.html`` in Chrome.
+* open ````http://127.0.0.1:8000/dialog_impl.html```` in Chrome.
 
 ###### The implementation is done  on top of`List<Team - > List < Team Members>>` data structure it can be viewed [here](https://github.com/shivateja-madipalli/SelectOInput/blob/master/data/teamMembers.json)
 
