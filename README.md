@@ -36,8 +36,8 @@
 
 ## Description
 * The Data is coming from [data](https://github.com/shivateja-madipalli/SelectOInput/blob/master/data/teamMembers.json) and it is loaded into the angular app with ngResource.
-* One can either select or type the team or team member name.
-* The Search is case insensitive.
+* Either select or type the team or team member name.
+* The Search (By typing) is case insensitive.
 * By default team member element will be disabled and unless a team is selected, it will not be enabled.
 
 ## Todo
