@@ -22,15 +22,15 @@
 
 ![Typing](/data/imgs/one-2.png?raw=true "")
 
-#### One can type of Select the values from select element
+#### Type or Select the values
 
 ![Typing](/data/imgs/typing.png?raw=true "")
 
-#### To Select Options
+#### Select Option view
 
 ![Typing](/data/imgs/options.png?raw=true "")
 
-#### After Selecting Team and Team Member
+#### After Selecting/Typing Team and Team Member
 
 ![Typing](/data/imgs/last.png?raw=true "")
 
